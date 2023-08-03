@@ -139,6 +139,36 @@ select::-ms-expand {
   color: #f39c12;
 }
 
+/* radio btn */
+label {
+  display: block;
+  color: #7d7d7d;
+}
+
+.floatBlock {
+  margin: 0 1.81em 0 0;
+}
+
+.labelish {
+	color:#7d7d7d;
+	margin: 0;
+}
+
+.paymentOptions {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	break-before: always;
+	margin: 0 0 10px 0;
+}
+
+#purchaseOrder {
+	margin: 0 0 2em 0;
+}
+
+
+
 @media (min-width: 992px) {
   body {
     overflow: auto !important;

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+     <link rel="stylesheet" href="css/style.css" />
+     <title>Star Whatsapp - Admin Dashboard</title>
+     <style>
+
+
+
+     </style>
+</head>
+
+<body id="style_2">
+     <!-- top navigation bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+               </button>
+               <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">Star Whatsapp</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+                    aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="topNavBar">
+                    <div class="d-flex ms-auto my-3 my-lg-0">
+                         <img src="ind_flag.png" alt="flag-png" style="width: 40px; height: 40px" />
+                         <div style="display: flex; align-items: center">
+                              <span style="
+                  color: white;
+                  display: flex;
+                  line-height: 21px;
+                  text-decoration: none solid rgb(205, 205, 222);
+                  word-spacing: 0;
+                ">&nbsp;Expire date: 13-12-2023</span>
+                         </div>
+                         &nbsp;
+                         <button class="btn_upgrade">Upgrade</button>
+                    </div>
+                    <ul class="navbar-nav">
+                         <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                   <i class="bi bi-person-fill"></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end">
+                                   <li>
+                                        <a class="dropdown-item" href="#"><i class="bi bi-person-fill"></i>
+                                             &nbsp;Account</a>
+                                   </li>
+                                   <li>
+                                        <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i> &nbsp;Change
+                                             Password</a>
+                                   </li>
+                                   <li>
+                                        <a class="dropdown-item" href="#"><i class="bi bi-card-list"></i> &nbsp;Plan</a>
+                                   </li>
+                                   <li>
+                                        <a class="dropdown-item" href="#"><i class="bi bi-credit-card-fill"></i>
+                                             &nbsp;Billing</a>
+                                   </li>
+                                   <li>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                   </li>
+                              </ul>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+     <!-- top navigation bar -->
+     <!-- offcanvas -->
+     <div class="offcanvas offcanvas-start sidebar-nav bg-dark scrollbar" tabindex="-1" id="sidebar">
+          <div class="offcanvas-body p-0" id="style_1">
+               <nav class="navbar-dark">
+                    <ul class="navbar-nav">
+                         <li>
+                              <a href="index.html" class="nav-link px-3 py-2 active"
+                                   style="margin-top: 10px; margin-bottom: -8px">
+                                   <span class="me-2"><i class="bi bi-house-door-fill"></i></span>
+                                   <span>Dashboard</span>
+                              </a>
+                         </li>
+                         <li class="my-4">
+                              <hr class="dropdown-divider bg-light" />
+                         </li>
+
+                         <!-- <li>
+              <a href="#" class="nav-link px-3 py-0" style="margin: -5px 0 -5px 0;">
+                <span class="me-2"><i class="bi bi-whatsapp"></i></span>
+                <span>Whatsapp</span>
+              </a>
+            </li> -->
+
+                         <li>
+                              <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
+                                   <span class="me-2"><i class="bi bi-whatsapp"></i></span>
+                                   <span>Whatsapp</span>
+                                   <span class="ms-auto">
+                                        <span class="right-icon">
+                                             <i class="bi bi-chevron-down"></i>
+                                        </span>
+                                   </span>
+                              </a>
+                              <div class="collapse" id="layouts">
+                                   <ul class="navbar-nav ps-3">
+                                        <!--Report Divider -->
+                                        <li>
+                                             <div class="text-muted small fw-bold text-uppercase px-3 mb-1 mt-2">
+                                                  Report
+                                             </div>
+                                        </li>
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <button class="btn_report">
+                                                       <i class="bi bi-plus"></i> Add account
+                                                  </button>
+                                             </a>
+                                        </li>
+                                        <!-- FEATURES Divider -->
+                                        <li>
+                                             <div class="text-muted small fw-bold text-uppercase px-3 mb-1 mt-2">
+                                                  FEATURES
+                                             </div>
+                                        </li>
+                                        <!-- Report -->
+                                        <li>
+                                             <a href="index.html" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-whatsapp"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">Report</span>
+                                                            <span style="display: flex;font-size: 8px;">Customize System
+                                                                 Interface</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!-- Profile -->
+                                        <li>
+                                             <a href="profile.html" class="nav-link px-4" id="profile">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-person-fill"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">Profile</span>
+                                                            <span style="display: flex;font-size: 8px;">Information
+                                                                 WhatsApp account</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!-- Bulk Messaging -->
+                                        <li>
+                                             <a href="whatsapp_bulk.html" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-chat-text-fill"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">Bulk
+                                                                 Messaging</span>
+                                                            <span style="display: flex;font-size: 8px;">Send to multiple
+                                                                 recipients</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!-- Autoresponder -->
+                                        <li>
+                                             <a href="autoresponder.html" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-reply-all-fill"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span
+                                                                 style="display: flex;font-size: 14px;">Autoresponder</span>
+                                                            <span style="display: flex;font-size: 8px;">Send a
+                                                                 pre-written message</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!-- Chatbot -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><svg
+                                                                      xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                      height="16" style="color: #20d471;"
+                                                                      fill="currentColor" class="bi bi-robot"
+                                                                      viewBox="0 0 16 16">
+                                                                      <path
+                                                                           d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                                                                      <path
+                                                                           d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+                                                                 </svg></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">Chatbot</span>
+                                                            <span style="display: flex;font-size: 8px;">Communicate with
+                                                                 users</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!--  Export participants -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-box-arrow-right"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;"> Export
+                                                                 participants</span>
+                                                            <span style="display: flex;font-size: 8px;">Export
+                                                                 participant list</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!--  API -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-plug-fill"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">API</span>
+                                                            <span style="display: flex;font-size: 8px;">API WhatApp
+                                                                 REST</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+
+                                        <!-- TEMPLATE Divider -->
+                                        <li>
+                                             <div class="text-muted small fw-bold text-uppercase px-3 mb-1 mt-2">
+                                                  TEMPLATE
+                                             </div>
+                                        </li>
+                                        <!--   Button template -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-menu-button"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;"> Button
+                                                                 template</span>
+                                                            <span style="display: flex;font-size: 8px;">Create
+                                                                 Interactive Button</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                        <!-- List message template -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-chat-dots-fill"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 13px;"> List message
+                                                                 template</span>
+                                                            <span style="display: flex;font-size: 8px;">Create list of
+                                                                 item/option</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+
+                                        <!-- CONTACT Divider -->
+                                        <li>
+                                             <div class="text-muted small fw-bold text-uppercase px-3 mb-1 mt-2">
+                                                  CONTACT
+                                             </div>
+                                        </li>
+                                        <!-- Contacts -->
+                                        <li>
+                                             <a href="#" class="nav-link px-4">
+                                                  <div class="row">
+                                                       <div class="col-sm-2" style="margin-top: 8px;">
+                                                            <span
+                                                                 style="border: .5px solid black;padding: 10px;border-radius: 10px;background-color: #0a0909;"><i
+                                                                      class="bi bi-menu-button"
+                                                                      style="color: #20d471;"></i></span>
+                                                       </div>
+                                                       <div class="col-sm-10" style="padding-left: 25px;">
+                                                            <span style="display: flex;font-size: 14px;">
+                                                                 Contacts</span>
+                                                            <span style="display: flex;font-size: 8px;">Create, edit
+                                                                 your contacts</span>
+                                                            </span>
+                                                       </div>
+                                                  </div>
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </li>
+
+                         <li class="my-4">
+                              <hr class="dropdown-divider bg-light" />
+                         </li>
+
+                         <li>
+                              <a href="#" class="nav-link px-3">
+                                   <span class="me-2"><i class="bi bi-person-lines-fill"></i></span>
+                                   <span>Account Manager</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="nav-link px-3">
+                                   <span class="me-2"><i class="bi bi-folder-fill"></i></span>
+                                   <span>File Manager</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="nav-link px-3">
+                                   <span class="me-2"><i class="bi bi-tools"></i></span>
+                                   <span>Tools</span>
+                              </a>
+                         </li>
+                    </ul>
+               </nav>
+          </div>
+     </div>
+     <!-- offcanvas -->
+     <main class="mt-5 pt-4">
+          <div class="container-fluid">
+               <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                         <h4 class="mt-5 pt-4">
+                              <i class="bi bi-reply-all-fill"
+                                   style="color: #20d471;"></i>&nbsp;&nbsp;<b>Autoresponder</b>
+                         </h4>
+                         <p class="pt-0" style="font-size: medium;padding-left: 4px;">Send a pre-written message</p>
+
+                         <div class="pt-3">
+                              <div class="select">
+                                   <select id="mySelect" onchange="selectAccount()">
+                                        <option value="0">Select WhatApp Account</option>
+                                        <option value="0">Apply for all Account</option>
+                                        <option value="Neha">Neha</option>
+                                        <option value="Rahul">Rahul</option>
+                                   </select>
+                              </div>
+                         </div> <br><br>
+
+                         <div class="" id="showData">
+                              <center>
+                                   <img src="empty2.png" alt="empty"
+                                        style="display: flex;align-items: center;justify-content: center;width:30%;">
+                              </center><br>
+
+                              <div class="card h-100">
+                                   <div class="card-header">
+                                        Autoresponder for Neha
+                                   </div>
+                                   <div class="card-body">
+                                        <form method="post" action="">
+                                             <p class="labelish">Status</p>
+                                             <div id="paymentContainer" name="paymentContainer" class="paymentOptions">
+                                                  <div id="payCC" class="floatBlock">
+                                                       <label for="paymentCC"> <input id="paymentCC" name="status" type="radio" value="enable" />Enable
+                                                       </label>
+                                                  </div>
+                                                  <div id="payInvoice" class="floatBlock">
+                                                       <label for="paymentInv"> <input id="paymentInv"
+                                                                 name="status" type="radio" value="disable" checked/>
+                                                            Disable</label>
+                                                  </div>
+                                             </div>
+                                             <p class="labelish">Sent to</p>
+                                             <div id="paymentContainer" name="paymentContainer" class="paymentOptions">
+                                                  <div id="payCC" class="floatBlock">
+                                                       <label for="paymentCC"> <input id="paymentCC" name="sent" type="radio" value="all" checked/>All
+                                                       </label>
+                                                  </div>
+                                                  <div id="payInvoice" class="floatBlock">
+                                                       <label for="paymentInv"> <input id="paymentInv"
+                                                                 name="sent" type="radio" value="disable" />
+                                                            Individual</label>
+                                                  </div>
+                                                  <div id="payInvoice" class="floatBlock">
+                                                       <label for="paymentInv"> <input id="paymentInv"
+                                                                 name="sent" type="radio" value="disable" />
+                                                            Group</label>
+                                                  </div>
+                                             </div>
+                                        </form>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+
+                    <div class="col-md-2"></div>
+               </div>
+          </div>
+     </main>
+     <script src="./js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+     <script src="./js/jquery-3.5.1.js"></script>
+     <!-- <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script> -->
+     <script src="./js/script.js"></script>
+</body>
+
+</html>
