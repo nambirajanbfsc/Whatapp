@@ -107,7 +107,7 @@
     </nav>
     <!-- top navigation bar -->
     <!-- offcanvas -->
-    <div
+     <div
       class="offcanvas offcanvas-start sidebar-nav bg-dark scrollbar"
       tabindex="-1"
       id="sidebar"
@@ -380,12 +380,11 @@
         <div class="row">
           <div class="col-md-6">
             <h4>
-              <i class="fas fa-robot" style="color: rgb(36, 235, 36)"></i
-              >&nbsp;&nbsp;<b>Chatbot</b>
+               <i class="far fa-address-book" style="color: rgb(36, 235, 36)"></i>
+               &nbsp;<b>Contacts</b>
             </h4>
-            <p style="display: flex;font-size: 14px;padding-left: 37px;">Communicate with users</p>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-sm-1"></div>
           <div class="col-md-4">
                <form class="ms-auto my-3 my-lg-0">
                     <div class="input-group">
@@ -401,140 +400,194 @@
                     </div>
                </form>
           </div>
-        </div>
-        <div class="row mt-3">
-          <!-- background-color: #0DA4F8; #68CBFE -->
+          <div class="col-sm-1">
+               <button class="btn btn-success"><i class="fas fa-plus"></i></button>
+          </div>
+        </div><br>
+         <div class="row mt-3">
           <div class="col-md-6 mb-3">
             <div
-              class="card text-black h-100"
-              style="border-radius: 15px;">
-              <div class="card-header py-5 px-5" style="background: linear-gradient(135deg, #19A9F9 0%, #ace0fd 100%);border-radius: 15px;">
-               <div class="row" style='display:flex;'>
-                  <div class='col-sm-6' style="display: flex;">
-                      <img src='person-bounding-box.svg' alt='person' style="width:25%;">
-                      <div style="display: flex;flex-direction: column;margin: 10px;">
-                        <h3 style="padding-left: 10px;font-family: Poppins, sans-serif;font-weight: 500;font-size: 20px;">Seema</h3>
-                        <p style="padding-left: 10px;">919425325531</p>
-                      </div>
-                  </div>
-                  <div class='col-sm-6'>
-                    <div style="align-items: center;float: right;">
-                     <p
+              class="card bg-dark text-white h-100"
+              style="
+                border-radius: 12px;
+              "
+            >
+              <div class="card-body px-5" style="padding-top: 30px">
+                <div style="display: flex; flex-direction: row">
+                  <div style="display: flex; flex: 1; flex-direction: column">
+                    <p
                       style="
-                        font-family: sans-serif;
-                        font-size: 50px;
-                        opacity: .5;
+                        font-family: Poppins, sans-serif;
+                        font-size: 20px;
                         font-weight: 600;
                         line-height: 24px;
                         text-decoration: none solid rgb(30, 30, 45);
                       "
                     >
-                      <i class="fas fa-robot"></i>
+                         Test Demo
                     </p>
+                    <p style="display: flex">
+                      <span style="font-size: 15px; display: flex">339 contacts</span>
+                    </p>
+                    <div>
+                         <button class="btn btn-primary"><i class="far fa-edit"></i></button>
+                         <button class="btn btn-light"><i class="far fa-list-alt"></i></button>
+                         <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                     </div>
                   </div>
-                </div><br>
+                  <div>
+                    <p
+                      style="
+                        font-size: 55px;
+                        opacity: 0.5;
+                        font-weight: 600;
+                        line-height: 24px;
+                      "
+                    >
+                      <i class="far fa-address-book"></i>
+                    </p>
+                  </div>
+                </div>
               </div>
-               <div class="card-body px-5" >
-                  <div class="row" style="margin-top: -70px;">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-4 card" style="border-radius: 12px;display: flex;justify-content: center;">
-                         <span><i class="fas fa-paper-plane" style="color: #23e67b;padding: 15px 0;"></i></span>
-                         <h4 class="" style="color: #a49e9e;">319</h4>
-                         <p>Sent</p>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-4 card" style="border-radius: 12px;display: flex;justify-content: center;">
-                         <span><i class="fas fa-exclamation-triangle" style="color: #df1717;padding: 15px 0;"></i></span>
-                         <h4 class="" style="color: #a49e9e;">0</h4>
-                         <p>Items</p>
-                    </div>
-                    <div class="col-sm-1"></div>
-                  </div>  <br>
-                 <div class="card" style="border-radius: 12px;color: #cbe2d5;background-color: #0a0909;padding: 15px;font-weight: 600;">
-                    <center>Please add at least a chatbot item and enable it to can start.</center>
-                 </div>
-               </div>
-               <hr class="dropdown-divider" />
-               <div class="container-fluid p-4">
-                    <div class="row" style="text-align: center;">
-                         <div class="col-sm-6">
-                              <button class="btn btn-dark"><i class="fas fa-plus"></i>&nbsp; Add item</button>
-                         </div>
-                         <div class="col-sm-6">
-                              <button class="btn btn-danger"><i class="far fa-list-alt"></i>&nbsp; Item list</button>
-                         </div>
-                    </div>
-               </div>
             </div>
-
           </div>
           <div class="col-md-6 mb-3">
             <div
-              class="card text-black h-100"
-              style="border-radius: 15px;">
-              <div class="card-header py-5 px-5" style="background: linear-gradient(135deg, #19A9F9 0%, #ace0fd 100%);border-radius: 15px;">
-               <div class="row" style='display:flex;'>
-                  <div class='col-sm-6' style="display: flex;">
-                      <img src='person-bounding-box.svg' alt='person' style="width:25%;">
-                      <div style="display: flex;flex-direction: column;margin: 10px;">
-                        <h3 style="padding-left: 10px;font-family: Poppins, sans-serif;font-weight: 500;font-size: 20px;">Teena</h3>
-                        <p style="padding-left: 10px;">919345325531</p>
-                      </div>
-                  </div>
-                  <div class='col-sm-6'>
-                    <div style="align-items: center;float: right;">
-                     <p
+              class="card bg-dark text-white h-100"
+              style="
+                border-radius: 12px;
+              "
+            >
+              <div class="card-body px-5" style="padding-top: 30px">
+                <div style="display: flex; flex-direction: row">
+                  <div style="display: flex; flex: 1; flex-direction: column">
+                    <p
                       style="
-                        font-family: sans-serif;
-                        font-size: 50px;
-                        opacity: .5;
+                        font-family: Poppins, sans-serif;
+                        font-size: 20px;
                         font-weight: 600;
                         line-height: 24px;
                         text-decoration: none solid rgb(30, 30, 45);
                       "
                     >
-                      <i class="fas fa-robot"></i>
+                         test group iram
                     </p>
+                    <p style="display: flex">
+                      <span style="font-size: 15px; display: flex">339 contacts</span>
+                    </p>
+                    <div>
+                         <button class="btn btn-primary"><i class="far fa-edit"></i></button>
+                         <button class="btn btn-light"><i class="far fa-list-alt"></i></button>
+                         <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                     </div>
                   </div>
-                </div><br>
+                  <div>
+                    <p
+                      style="
+                        font-size: 55px;
+                        opacity: 0.5;
+                        font-weight: 600;
+                        line-height: 24px;
+                      "
+                    >
+                      <i class="far fa-address-book"></i>
+                    </p>
+                  </div>
+                </div>
               </div>
-               <div class="card-body px-5" >
-                  <div class="row" style="margin-top: -70px;">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-4 card" style="border-radius: 12px;display: flex;justify-content: center;">
-                         <span><i class="fas fa-paper-plane" style="color: #23e67b;padding: 15px 0;"></i></span>
-                         <h4 class="" style="color: #a49e9e;">319</h4>
-                         <p>Sent</p>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-4 card" style="border-radius: 12px;display: flex;justify-content: center;">
-                         <span><i class="fas fa-exclamation-triangle" style="color: #df1717;padding: 15px 0;"></i></span>
-                         <h4 class="" style="color: #a49e9e;">0</h4>
-                         <p>Items</p>
-                    </div>
-                    <div class="col-sm-1"></div>
-                  </div>  <br>
-                 <div class="card" style="border-radius: 12px;color: #cbe2d5;background-color: #0a0909;padding: 15px;font-weight: 600;">
-                    <center>Please add at least a chatbot item and enable it to can start.</center>
-                 </div>
-               </div>
-               <hr class="dropdown-divider" />
-               <div class="container-fluid p-4">
-                    <div class="row" style="text-align: center;">
-                         <div class="col-sm-6">
-                              <button class="btn btn-dark"><i class="fas fa-plus"></i>&nbsp; Add item</button>
-                         </div>
-                         <div class="col-sm-6">
-                              <button class="btn btn-danger"><i class="far fa-list-alt"></i>&nbsp; Item list</button>
-                         </div>
-                    </div>
-               </div>
             </div>
-
+          </div>
+          <div class="col-md-6 mb-3">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border-radius: 12px;
+              "
+            >
+              <div class="card-body px-5" style="padding-top: 30px">
+                <div style="display: flex; flex-direction: row">
+                  <div style="display: flex; flex: 1; flex-direction: column">
+                    <p
+                      style="
+                        font-family: Poppins, sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-decoration: none solid rgb(30, 30, 45);
+                      "
+                    >
+                         JOB VACANCY GROUP
+                    </p>
+                    <p style="display: flex">
+                      <span style="font-size: 15px; display: flex">339 contacts</span>
+                    </p>
+                    <div>
+                         <button class="btn btn-primary"><i class="far fa-edit"></i></button>
+                         <button class="btn btn-light"><i class="far fa-list-alt"></i></button>
+                         <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      style="
+                        font-size: 55px;
+                        opacity: 0.5;
+                        font-weight: 600;
+                        line-height: 24px;
+                      "
+                    >
+                      <i class="far fa-address-book"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border-radius: 12px;
+              "
+            >
+              <div class="card-body px-5" style="padding-top: 30px">
+                <div style="display: flex; flex-direction: row">
+                  <div style="display: flex; flex: 1; flex-direction: column">
+                    <p
+                      style="
+                        font-family: Poppins, sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-decoration: none solid rgb(30, 30, 45);
+                      "
+                    >
+                         sw prom. 3 2-aug
+                    </p>
+                    <p style="display: flex">
+                      <span style="font-size: 15px; display: flex">339 contacts</span>
+                    </p>
+                    <div>
+                         <button class="btn btn-primary"><i class="far fa-edit"></i></button>
+                         <button class="btn btn-light"><i class="far fa-list-alt"></i></button>
+                         <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      style="
+                        font-size: 55px;
+                        opacity: 0.5;
+                        font-weight: 600;
+                        line-height: 24px;
+                      "
+                    >
+                      <i class="far fa-address-book"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
