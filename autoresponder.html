@@ -10,11 +10,7 @@
      <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
      <link rel="stylesheet" href="css/style.css" />
      <title>Star Whatsapp - Admin Dashboard</title>
-     <style>
-
-
-
-     </style>
+     
 </head>
 
 <body id="style_2">
@@ -211,7 +207,7 @@
                                         </li>
                                         <!-- Chatbot -->
                                         <li>
-                                             <a href="#" class="nav-link px-4">
+                                             <a href="whatsapp_chatbot.html" class="nav-link px-4">
                                                   <div class="row">
                                                        <div class="col-sm-2" style="margin-top: 8px;">
                                                             <span
@@ -392,7 +388,7 @@
 
                          <div class="pt-3">
                               <div class="select">
-                                   <select id="mySelect" onchange="selectAccount()">
+                                   <select id="mySelect" onchange="selectAutoAcc()">
                                         <option value="0">Select WhatApp Account</option>
                                         <option value="0">Apply for all Account</option>
                                         <option value="Neha">Neha</option>
@@ -406,54 +402,14 @@
                                    <img src="empty2.png" alt="empty"
                                         style="display: flex;align-items: center;justify-content: center;width:30%;">
                               </center><br>
-
-                              <div class="card h-100">
-                                   <div class="card-header">
-                                        Autoresponder for Neha
-                                   </div>
-                                   <div class="card-body">
-                                        <form method="post" action="">
-                                             <p class="labelish">Status</p>
-                                             <div id="paymentContainer" name="paymentContainer" class="paymentOptions">
-                                                  <div id="payCC" class="floatBlock">
-                                                       <label for="paymentCC"> <input id="paymentCC" name="status" type="radio" value="enable" />Enable
-                                                       </label>
-                                                  </div>
-                                                  <div id="payInvoice" class="floatBlock">
-                                                       <label for="paymentInv"> <input id="paymentInv"
-                                                                 name="status" type="radio" value="disable" checked/>
-                                                            Disable</label>
-                                                  </div>
-                                             </div>
-                                             <p class="labelish">Sent to</p>
-                                             <div id="paymentContainer" name="paymentContainer" class="paymentOptions">
-                                                  <div id="payCC" class="floatBlock">
-                                                       <label for="paymentCC"> <input id="paymentCC" name="sent" type="radio" value="all" checked/>All
-                                                       </label>
-                                                  </div>
-                                                  <div id="payInvoice" class="floatBlock">
-                                                       <label for="paymentInv"> <input id="paymentInv"
-                                                                 name="sent" type="radio" value="disable" />
-                                                            Individual</label>
-                                                  </div>
-                                                  <div id="payInvoice" class="floatBlock">
-                                                       <label for="paymentInv"> <input id="paymentInv"
-                                                                 name="sent" type="radio" value="disable" />
-                                                            Group</label>
-                                                  </div>
-                                             </div>
-                                        </form>
-                                   </div>
-                              </div>
                          </div>
-                    </div>
-
-
+                    </div><br>
                     <div class="col-md-2"></div>
                </div>
-          </div>
+          </div><br>
      </main>
      <script src="./js/bootstrap.bundle.min.js"></script>
+     <script src="https://kit.fontawesome.com/1d5faa0c8e.js" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
      <script src="./js/jquery-3.5.1.js"></script>
      <!-- <script src="./js/jquery.dataTables.min.js"></script>
