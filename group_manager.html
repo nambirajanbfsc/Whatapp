@@ -1,88 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="css/bootstrap.min.css" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
-     <link rel="stylesheet" href="css/style.css" />
-     <title>Star Whatsapp - Admin Dashboard</title>
-     <style>
-          table{
-               border-radius: 12px;
-               overflow: hidden;
-          }
-          .que_table tr {
-               LINE-HEIGHT:50px;
-          }
-     </style>
-</head>
-
-<body id="style_2">
-     <!-- top navigation bar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Star Whatsapp - Admin Dashboard</title>
+  </head>
+  <body id="style_2">
+    <!-- top navigation bar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
-               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
-                    aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
-               </button>
-               <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">Star Whatsapp</a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
-                    aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="topNavBar">
-                    <div class="d-flex ms-auto my-3 my-lg-0">
-                         <img src="ind_flag.png" alt="flag-png" style="width: 40px; height: 40px" />
-                         <div style="display: flex; align-items: center">
-                              <span style="
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >Star Whatsapp</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topNavBar">
+          <div class="d-flex ms-auto my-3 my-lg-0">
+            <img
+              src="ind_flag.png"
+              alt="flag-png"
+              style="width: 40px; height: 40px"
+            />
+            <div style="display: flex; align-items: center">
+              <span
+                style="
                   color: white;
                   display: flex;
                   line-height: 21px;
                   text-decoration: none solid rgb(205, 205, 222);
                   word-spacing: 0;
-                ">&nbsp;Expire date: 13-12-2023</span>
-                         </div>
-                         &nbsp;
-                         <button class="btn_upgrade">Upgrade</button>
-                    </div>
-                    <ul class="navbar-nav">
-                         <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
-                                   <i class="bi bi-person-fill"></i>
-                              </a>
-                              <ul class="dropdown-menu dropdown-menu-end">
-                                   <li>
-                                        <a class="dropdown-item" href="#"><i class="bi bi-person-fill"></i>
-                                             &nbsp;Account</a>
-                                   </li>
-                                   <li>
-                                        <a class="dropdown-item" href="#"><i class="bi bi-key-fill"></i> &nbsp;Change
-                                             Password</a>
-                                   </li>
-                                   <li>
-                                        <a class="dropdown-item" href="#"><i class="bi bi-card-list"></i> &nbsp;Plan</a>
-                                   </li>
-                                   <li>
-                                        <a class="dropdown-item" href="#"><i class="bi bi-credit-card-fill"></i>
-                                             &nbsp;Billing</a>
-                                   </li>
-                                   <li>
-                                        <a class="dropdown-item" href="#">Logout</a>
-                                   </li>
-                              </ul>
-                         </li>
-                    </ul>
-               </div>
+                "
+                >&nbsp;Expire date: 13-12-2023</span
+              >
+            </div>
+            &nbsp;
+            <button class="btn_upgrade">Upgrade</button>
           </div>
-     </nav>
-     <!-- top navigation bar -->
-     <!-- offcanvas -->
-   <div
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-person-fill"></i> &nbsp;Account</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-key-fill"></i> &nbsp;Change Password</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-card-list"></i> &nbsp;Plan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-credit-card-fill"></i> &nbsp;Billing</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- top navigation bar -->
+    <!-- offcanvas -->
+     <div
       class="offcanvas offcanvas-start sidebar-nav bg-dark scrollbar"
       tabindex="-1"
       id="sidebar"
@@ -382,64 +407,51 @@
         </nav>
       </div>
     </div>
-     <!-- offcanvas -->
-     <main class="mt-5 pt-4">
-          <div class="container-fluid">
-               <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                         <h4 class="mt-5 pt-4">
-                              <i class="bi bi-box-arrow-right"
-                                   style="color: #20d471;"></i>&nbsp;&nbsp;<b> Export participants</b>
-                         </h4>
-                         <p class="pt-0" style="font-size: medium;padding-left: 4px;">Export participant list</p>
-
-                         <div class="pt-3">
-                              <div class="select">
-                                   <select id="mySelect" onchange="selectExportPar()">
-                                        <option value="0">Select WhatApp Account</option>
-                                        <option value="Neha">Neha</option>
-                                        <option value="Rahul">Rahul</option>
-                                   </select>
-                              </div>
-                         </div> <br><br>
-                          <table class="table table-dark que_table">
-                              <thead>
-                                   <tr>
-                                        <td style="LINE-HEIGHT:50px;">How to use?</td>
-                                   </tr>
-                              </thead>
-                              <tbody>
-                                   <tr>
-                                        <td>1. Send a message to group you want export participants</td>
-                                   </tr>
-                                   <tr>
-                                        <td>2. Select account you want export participants</td>
-                                   </tr>
-                                   <tr>
-                                       <td>3. Click Download button of group you want export on list</td>
-                                   </tr>
-                              </tbody>
-                         </table>
-                         <div class="" id="showData">
-                              <center>
-                                   <img src="empty2.png" alt="empty"
-                                        style="display: flex;align-items: center;justify-content: center;width:30%;">
-                              </center><br>
-                              <br>
-                         </div>
-                    </div><br>
-                    <div class="col-md-2"></div>
-               </div>
-          </div><br>
-     </main>
-     <script src="./js/bootstrap.bundle.min.js"></script>
-     <script src="https://kit.fontawesome.com/1d5faa0c8e.js" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
-     <script src="./js/jquery-3.5.1.js"></script>
-     <!-- <script src="./js/jquery.dataTables.min.js"></script>
+    <!-- offcanvas -->
+     <main class="mt-5 pt-4 p-5" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>
+               <i class="fas fa-users" style="color: rgb(36, 235, 36)"></i>
+               &nbsp;<b>Group manager</b>
+            </h4>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-md-4">
+               <form class="ms-auto my-3 my-lg-0">
+                    <div class="input-group">
+                    <input
+                         class="form-control"
+                         type="search"
+                         placeholder="Search"
+                         aria-label="Search"
+                    />
+                    <button class="btn btn-primary" type="submit">
+                         <i class="bi bi-search"></i>
+                    </button>
+                    </div>
+               </form>
+          </div>
+          <div class="col-sm-1">
+               <button class="btn btn-success"><i class="fas fa-plus"></i></button>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-12">
+               <center>
+                    <img style="margin-top:15%;" src="empty2.png" alt="empty" width="20%">
+               </center>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/1d5faa0c8e.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <!-- <script src="./js/jquery.dataTables.min.js"></script>
     <script src="./js/dataTables.bootstrap5.min.js"></script> -->
-     <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
